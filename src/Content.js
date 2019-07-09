@@ -1,10 +1,16 @@
 import React from 'react';
+import Projects from './Projects';
 import './App.css';
 
-function Content() {
+function Content({name}) {
     return (
-    <div>
-      <h3>Projects</h3>
+    <div className="content">
+      <h2>Projects</h2>
+      <div className="content__projects">
+        <Projects name="Project 1"/>
+        <Projects name="Project 2"/>
+        <Projects name="Project 3"/>
+      </div>
     </div>
     );
   }
